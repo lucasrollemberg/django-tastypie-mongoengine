@@ -297,7 +297,7 @@ class MongoEngineResource(resources.ModelResource):
                     pass
             # the uri wasn't found at any of the polymorphic resources, it is an incorrect URI for this resource
             raise
-        except Exception, e:
+        except Exception as e:
             raise e
 
     # Data preparation.
